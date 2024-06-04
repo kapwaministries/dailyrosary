@@ -1,21 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const themeToggleButtons = document.querySelectorAll('[data-bs-theme-value]');
-
-    themeToggleButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const theme = button.getAttribute('data-bs-theme-value');
-            document.body.setAttribute('data-bs-theme', theme);
-            localStorage.setItem('theme', theme);
-
-            // Update active state
-            themeToggleButtons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-        });
-    });
-
+    const themeButton = document.getElementById('bd-theme');
+    const themeIcon = document.getElementById('theme-icon');
+    
     // Apply saved theme on load
     const savedTheme = localStorage.getItem('theme') || 'light';
     document.body.setAttribute('data-bs-theme', savedTheme);
-    const activeButton = document.querySelector(`[data-bs-theme-value="${savedTheme}"]`);
-    if (activeButton) activeButton.classList.add('active');
+    themeIcon.querySelector('use').setAttribute('href', savedTheme === 'dark' ? '#moon-stars-fill' : '#sun-fill');
+    
+    themeButton.addEventListener('click', () => {
+        const currentTheme = document.body.getAttribute('data-bs-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        document.body.setAttribute('data-bs-theme', newTheme);
+        themeIcon.querySelector('use').setAttribute('href', newTheme === 'dark' ? '#moon-stars-fill' : '#sun-fill');
+        localStorage.setItem('theme', newTheme);
+    });
 });
