@@ -14,6 +14,7 @@ h1 {
     text-align: center;
 }
 
+/* Fonts */
 .courgette-regular {
     font-family: "Courgette", cursive;
     font-weight: 600;
@@ -24,8 +25,9 @@ h1 {
     font-family: "Courgette", cursive;
     font-weight: 200;
     font-style: normal;
-    color: beige;
 }
+
+/* Navigation */
 
 
 /* Theme Toggle Button Styles */
@@ -82,7 +84,7 @@ h1 {
   }
 
   .btn-bd-primary {
-    --bd-violet-bg: #191818;
+    --bd-violet-bg: #240750;
     --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
 
     --bs-btn-font-weight: 600;
@@ -90,11 +92,11 @@ h1 {
     --bs-btn-bg: var(--bd-violet-bg);
     --bs-btn-border-color: var(--bd-violet-bg);
     --bs-btn-hover-color: var(--bs-white);
-    --bs-btn-hover-bg: #1b1b1b;
+    --bs-btn-hover-bg: #5C2FC2;
     --bs-btn-hover-border-color: #fefefe;
     --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
     --bs-btn-active-color: var(--bs-btn-hover-color);
-    --bs-btn-active-bg: #04000a;
+    --bs-btn-active-bg: #240750;
     --bs-btn-active-border-color: #fefefe;
   }
 
