@@ -128,4 +128,16 @@ h1 {
   display: none;
 }
 
+.bible-chapter {
+  font-size: xx-small;
+}
+
+.bold-numbers {
+  list-style: decimal;
+}
+
+.bold-numbers::marker {
+  font-weight: bold;
+}
+
   
