@@ -142,16 +142,26 @@ h1 {
 
 /* Added May 28, 2025 - Targetting text formating of the Mystery Title and when theme toggles between light and dark mode */
 .text-shadow {
-  text-shadow: 1px 1px 3px rgba(64, 0, 128, 0.5);
+  text-shadow: 1px 1px 2px #40008080;
 }
 
 .text-shadow-2 {
-  text-shadow: 2px 2px 3px rgba(64, 0, 128, 0.5);
+  text-shadow: 2px 2px 3px #40008080;
+}
+
+/* Custom Colors when Changing Theme to Dark Mode */
+[data-bs-theme="light"] .custom-head {
+  color: #6435d1; /* color in light mode */
+}
+
+[data-bs-theme="dark"] .custom-head {
+  color: #ffffff; /* color in dark mode */
+  text-shadow: 2px 2px 3px gainsboro;
 }
 
 /* Custom Colors when Changing Theme to Dark Mode */
 [data-bs-theme="light"] .custom-heading {
-  color: #5C2FC2; /* blue in light mode */
+  color: #6435d1; /* blue in light mode */
 }
 
 [data-bs-theme="dark"] .custom-heading {
