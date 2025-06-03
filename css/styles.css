@@ -31,7 +31,7 @@ h1 {
 .lora-regular {
   font-family: "Lora", serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -150,16 +150,16 @@ h1 {
 
 /* Added May 28, 2025 - Targetting text formating of the Mystery Title and when theme toggles between light and dark mode */
 .text-shadow {
-  text-shadow: 1px 1px 2px #40008080;
+  text-shadow: 1px 1px 2px #808080;
 }
 
 .text-shadow-2 {
-  text-shadow: 2px 2px 3px #40008080;
+  text-shadow: 2px 2px 3px #808080;
 }
 
 /* Custom Colors when Changing Theme to Dark Mode */
 [data-bs-theme="light"] .custom-head {
-  color: #6435d1; /* color in light mode */
+  color: #c70505; /* color in light mode */
 }
 
 [data-bs-theme="dark"] .custom-head {
@@ -169,7 +169,7 @@ h1 {
 
 /* Custom Colors when Changing Theme to Dark Mode */
 [data-bs-theme="light"] .custom-heading {
-  color: #6435d1; /* blue in light mode */
+  color: #5900b3; /* blue in light mode */
 }
 
 [data-bs-theme="dark"] .custom-heading {
